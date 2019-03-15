@@ -1,0 +1,35 @@
+- include: apt.yml
+
+- name: Install nvm
+  shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+
+- name: Install node 8 and yarn
+  shell: |
+        source ~/.nvm/nvm.sh
+        nvm install 8
+        npm install -g yarn
+
+- name: create IDE build/install dir
+  file:
+    path: "{{ theia-ide-dir }}"
+    state: directory
+    owner: "{{ theia-ide-user }}"
+    group: root
+    mode: 0775
+
+- name: copy IDE configuration
+  copy:
+    src: package.json
+    dest: "{{ theia-ide-dir }}/package.json"
+    owner: "{{ theia-ide-user }}"
+    group: root
+    mode: 0444
+
+- name: build ide
+  shell: |
+        yarn
+        yarn theia build
+
+
+
+
