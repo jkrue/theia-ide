@@ -1,0 +1,14 @@
+[Unit]
+Description=Theia-IDE service for user ubuntu
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+ExecStart=/home/ubuntu/theia-ide/theia-ide.sh /home/ubuntu localhost 8080
+
+[Install]
+WantedBy=multi-user.target
