@@ -1,2 +1,2 @@
 - apt:
-    name: ["python","make","g++"]
+    name: ["python","make","g++", "curl","git"]
