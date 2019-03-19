@@ -29,7 +29,6 @@ The idea is to leave the auth part to the webserver / reverse proxy. However if 
 feature you have to take care about it by yourself.
 
 
-
 ## Example playbook 
 
 Depending on your cloud image the playbook (and the hosts file) might look different.
