@@ -26,6 +26,7 @@
   args:
     creates: "{{ nvm_install_dir }}/nvm.sh"
     warn: false
+    executable: bash -o pipefail
 
 - name: Install node 8 and yarn
   shell: |
@@ -33,7 +34,7 @@
         nvm install 8
         npm install -g yarn
   args:
-    executable: /bin/bash
+    executable: bash
 
 - name: Create IDE build dir
   file:
@@ -53,7 +54,7 @@
         yarn theia build
   args:
     chdir: "{{ theia_ide_install_dir }}"
-    executable: /bin/bash
+    executable: bash
 
 - name: Generate IDE start skript to /usr/local/bin
   template:
