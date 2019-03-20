@@ -1,7 +1,7 @@
 # Theia-IDE
 Install and configure  [Theia-IDE](https://www.theia-ide.org) on supported cloud images.
 
-![](docs/images/screenshot.png "running Theia-IDE on Debian Strech")
+![](docs/images/screenshot.png "running Theia-IDE on Debian Stretch")
 
 Supported cloud images are:
 - [Ubuntu Xenial (16.04) LTS](https://cloud-images.ubuntu.com/xenial/current/) - default user: ubuntu
