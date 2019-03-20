@@ -1,2 +1,3 @@
-- apt:
+- name: Install packages
+  apt:
     name: ["python", "make", "g++", "curl", "git"]

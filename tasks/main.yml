@@ -10,11 +10,13 @@
     state: directory
     mode: 0755
 
-- set_fact:
+- name: Set fact 'theia_ide_user' when not defined
+  set_fact:
     theia_ide_user: "{{ ansible_env.SUDO_USER }}"
   when: theia_ide_user is not defined
 
-- set_fact:
+- name: Set fact 'theia_ide_workspace' when not defined
+  set_fact:
     theia_ide_workspace: "{{ ansible_env.PWD }}"
   when: theia_ide_workspace is not defined
 

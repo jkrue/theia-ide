@@ -1,2 +1,3 @@
-- yum:
+- name: install packages
+  yum:
     name: ["python", "curl", "git", "make", "gcc", "gcc-c++"]
