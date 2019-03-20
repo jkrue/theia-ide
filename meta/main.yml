@@ -9,16 +9,16 @@ galaxy_info:
   min_ansible_version: 2.7
 
   platforms:
-    - name: CentOS
+    - name: EL
       versions:
         - 7
     - name: Debian
       versions:
-        - Stretch (9)
+        - stretch
     - name: Ubuntu
       versions:
-        - Xenial (16.04 LTS)
-        - Bionic (18.04 LTS)
+        - xenial
+        - bionic
 
   galaxy_tags:
     - cloud
