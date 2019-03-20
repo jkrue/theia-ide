@@ -1,2 +1,2 @@
 - yum:
-    name: ["python","curl","git","make","gcc","gcc-c++"]
+    name: ["python", "curl", "git", "make", "gcc", "gcc-c++"]

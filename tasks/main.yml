@@ -70,9 +70,3 @@
     name: theia-ide.service
     enabled: true
     state: started
-
-
-
-
-
-
