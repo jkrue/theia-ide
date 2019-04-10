@@ -26,7 +26,6 @@
   args:
     creates: "{{ nvm_install_dir }}/nvm.sh"
     warn: false
-    executable: bash -o pipefail
 
 - name: Install node 8 and yarn
   shell: |
