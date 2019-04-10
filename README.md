@@ -52,11 +52,11 @@ Depending on your cloud image the playbook (and the hosts file) might look diffe
 
 #### site.yml
 ```yaml
-- hosts: ubuntu1604
+- hosts: ubuntu1804
   become: 'yes'
   gather_facts: false
   pre_tasks:
-    - name: Install python2 on Ubuntu 16.04 cloud-image 
+    - name: Install python2 on Ubuntu 18.04 cloud-image 
       raw: bash -c "test -e /usr/bin/python || (apt -qqy update && apt-get install -qqy python-minimal)
       register: output
       changed_when: output.stdout != ""
