@@ -17,7 +17,7 @@ The following variables are supported and can be used to modify the setup.
 
 
 - **nvm_install_dir**:  */opt/nvm*
-- **nvm_user**: default is the *ansible user*
+- **theia_ide_user**: default is the *ansible user*
 - **theia_ide_workspace**:  default is the *ansible users homedir*
 - **theia_ide_install_dir**: */opt/theia-ide*
 - **theia_ide_bind_address**: *localhost*
