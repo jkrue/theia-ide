@@ -63,13 +63,13 @@ Depending on your cloud image the playbook (and the hosts file) might look diffe
     - name: Gathering facts
       setup:    
   roles:
-  - jkrue.theia-ide
+  - jkrue.theia_ide
 
 
 - hosts: ["ubuntu1804","debian","centos"]
   become: 'yes'
   roles:
-  - jkrue.theia-ide
+  - jkrue.theia_ide
 
 ```
 
