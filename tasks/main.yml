@@ -27,10 +27,10 @@
     creates: "{{ nvm_install_dir }}/nvm.sh"
     warn: false
 
-- name: Install node 8 and yarn
+- name: Install node 10 and yarn
   shell: |
         source {{ nvm_install_dir }}/nvm.sh
-        nvm install 8
+        nvm install 10
         npm install -g yarn
   args:
     executable: bash
